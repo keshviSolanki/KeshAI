@@ -1,401 +1,294 @@
-# KeshAI — AI-Powered Intelligent Assistant
+# 🚀 KeshAI — AI-Powered Intelligent Assistant
 
 <p align="center">
-  <strong>An AI-powered assistant built with the MERN stack and a microservices architecture.</strong>
+  <strong>Your AI-powered workspace for chatting, coding, researching, and creating.</strong>
 </p>
 
 <p align="center">
-  Intelligent conversations, coding assistance, PDF analysis, web search, image generation, and more — in one platform.
+  A full-stack AI assistant built with the MERN stack, microservices architecture, and modern AI technologies.
 </p>
 
 <p align="center">
-  <a href="https://github.com/keshviSolanki/KeshAI">GitHub Repository</a>
+  <a href="https://photography-buried-instrumental-animal.trycloudflare.com"><strong>🌐 Try KeshAI Live Demo</strong></a>
+  &nbsp; • &nbsp;
+  <a href="https://github.com/keshviSolanki/KeshAI"><strong>💻 GitHub Repository</strong></a>
 </p>
 
 ---
 
-## Overview
+## 🌟 About KeshAI
 
-**KeshAI** is an AI-powered assistant designed to provide multiple AI capabilities through a unified web application. It combines a React-based frontend with a Node.js and Express.js microservices backend to support AI-powered conversations, coding assistance, document analysis, web search, image generation, and subscription-based credit management.
+**KeshAI** is an AI-powered assistant designed to bring multiple AI capabilities into one platform. It combines a modern React frontend with a Node.js and Express backend organized into independent microservices.
 
-The platform uses modern web technologies and AI integrations to provide a responsive user experience while keeping authentication, chat management, AI processing, and billing in separate backend services.
+The platform aims to make AI-powered conversations, coding assistance, document analysis, web research, and content generation accessible through a single interface.
 
-## Features
+Built as a full-stack development project, KeshAI integrates authentication, AI workflows, file handling, vector search, and subscription billing into one application.
 
-- **AI Chat Assistant** — Interact with AI models through a conversational interface.
-- **Coding Assistant** — Get programming help, code explanations, and development assistance.
-- **PDF Analysis with RAG** — Upload PDF documents and ask questions about their content using retrieval-augmented generation.
-- **AI Web Search** — Retrieve information from the web through search integrations.
-- **AI Image Generation** — Generate images from text prompts through an AI image-generation workflow.
-- **Vision Capabilities** — Support image-related AI interactions.
-- **Presentation Generation** — Generate presentation files through an AI-powered workflow.
-- **Google Authentication** — Sign in using Firebase Authentication and Google login.
-- **Chat History** — Manage conversations and retrieve previous messages.
-- **Credit Management** — Track usage through a credit-based system.
-- **Subscription Billing** — Integrate Razorpay for payment processing and plan upgrades.
-- **File Uploads** — Support document and other file workflows.
-- **Microservices Architecture** — Separate authentication, chat, AI processing, billing, and API gateway responsibilities.
-- **Cloud Integration** — Designed with AWS services and cloud storage integrations.
+> **Live Demo Notice:** The demo is shared through a temporary Cloudflare Quick Tunnel connected to the developer's local machine. It is not a permanently hosted production deployment. The link works only while the local computer, frontend preview server, required backend services, and Cloudflare tunnel are running. The URL may change when the tunnel restarts. If the demo is unavailable, please contact the project owner.
 
-## Tech Stack
+## ✨ Features
 
-### Frontend
-- React.js
-- Vite
-- Redux Toolkit
-- Axios
-- Tailwind CSS
-- Firebase Authentication
-- Lucide React
+### 🤖 AI-Powered Assistance
+- **AI Chat:** Interact with an AI assistant through a conversational interface.
+- **Coding Assistance:** Get help with programming questions and code-related tasks.
+- **PDF Analysis:** Upload and analyze PDF documents using Retrieval-Augmented Generation (RAG).
+- **Web Research:** Support for web-search-powered information gathering.
+- **Image Generation:** Generate images through supported AI integrations.
+- **Vision Capabilities:** Support for AI workflows involving image inputs.
+- **Content Creation:** AI-assisted document and presentation generation.
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB and Mongoose
-- Redis
-- JSON Web Tokens (JWT)
-- Firebase Admin SDK
-- REST APIs
+### 🔐 Authentication and User Management
+- Google sign-in using Firebase Authentication.
+- Backend authentication and user verification.
+- User-specific conversations and application data.
+- Session management using Redis.
 
-### AI and Data Processing
-- LangChain
-- LangGraph
-- Retrieval-Augmented Generation (RAG)
-- Vector embeddings
-- Qdrant vector database
-- OpenRouter model integration
-- Tavily web search integration
-- Monaco Editor
+### 📄 Document and File Workflows
+- File upload and processing workflows.
+- PDF question answering using RAG.
+- Vector search integration using Qdrant.
+- Support for generated documents and presentations.
 
-### Payments and Cloud
-- Razorpay
-- AWS integration for cloud infrastructure and file storage
-- Docker
-- Docker Compose
-- Amazon Elastic Container Registry (ECR)
-- Application Load Balancer
-- Amazon CloudFront
+### 💳 Subscription and Credits
+- Credit-based AI usage.
+- Free and paid subscription plan support.
+- Razorpay integration for payment workflows.
 
-## System Architecture
+### 🏗️ Scalable Backend Architecture
+- Independent backend microservices.
+- Centralized API gateway.
+- MongoDB for application data.
+- Redis for session and caching workflows.
+- LangChain and LangGraph for AI application workflows.
 
-KeshAI follows a microservices architecture in which the API gateway routes incoming requests to the appropriate backend service.
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | React, Vite, JavaScript |
+| Styling | Tailwind CSS |
+| State Management | Redux Toolkit |
+| API Communication | Axios |
+| Backend | Node.js, Express.js |
+| Architecture | Microservices |
+| Database | MongoDB, MongoDB Atlas |
+| Session and Caching | Redis |
+| Authentication | Firebase Authentication, Firebase Admin SDK |
+| AI Integration | OpenRouter and supported AI models |
+| AI Workflows | LangChain, LangGraph |
+| Retrieval-Augmented Generation | Qdrant, embeddings, vector search |
+| Web Research | Tavily integration |
+| Payments | Razorpay |
+| Cloud and Storage Integrations | AWS S3 and related AWS services |
+| Public Demo Access | Cloudflare Quick Tunnel |
+
+*The availability of individual integrations depends on their configuration, API credentials, and service status.*
+
+## 🏛️ Architecture
+
+KeshAI uses a microservices architecture in which the frontend communicates with a central API gateway, which routes requests to the appropriate backend services.
 
 ```text
-                     ┌──────────────────────┐
-                     │      React UI        │
-                     │    Vite + Redux      │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-                     ┌──────────────────────┐
-                     │     API Gateway      │
-                     │       Port 8000      │
-                     └──────────┬───────────┘
-                                │
-              ┌─────────────────┼─────────────────┐
-              │                 │                 │
-              ▼                 ▼                 ▼
-      ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-      │ Auth Service │  │ Chat Service │  │ Agent Service│
-      │ Port 8001    │  │ Port 8002    │  │ Port 8003    │
-      └──────┬───────┘  └──────┬───────┘  └──────┬───────┘
-             │                 │                 │
-             ▼                 ▼                 ▼
-      ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-      │   MongoDB    │  │   MongoDB    │  │ AI / RAG /   │
-      │ User Data    │  │ Chat Data    │  │ Integrations │
-      └──────────────┘  └──────────────┘  └──────────────┘
+                 ┌─────────────────────┐
+                 │      User / Browser │
+                 └──────────┬──────────┘
+                            │
+                 ┌──────────▼──────────┐
+                 │   React + Vite UI   │
+                 │    Port: 4173       │
+                 └──────────┬──────────┘
+                            │
+                 ┌──────────▼──────────┐
+                 │     API Gateway     │
+                 │     Port: 8000      │
+                 └──────────┬──────────┘
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+   ┌──────▼──────┐   ┌──────▼──────┐   ┌──────▼──────┐
+   │ Auth Service│   │ Chat Service│   │Agent Service│
+   │ Port: 8001  │   │ Port: 8002  │   │ Port: 8003  │
+   └─────────────┘   └─────────────┘   └─────────────┘
+                            │
+                     ┌──────▼──────┐
+                     │Billing Svc. │
+                     │ Port: 8004  │
+                     └─────────────┘
 
-                     ┌──────────────────────┐
-                     │   Billing Service    │
-                     │      Port 8004       │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-                     ┌──────────────────────┐
-                     │ Razorpay + Database  │
-                     └──────────────────────┘
-
-          Shared infrastructure: Redis, Qdrant, AWS
+             Supporting Infrastructure
+       MongoDB • Redis • Qdrant • AI APIs
 ```
 
-*The diagram represents the logical architecture. Actual request flows and integrations depend on the service implementation and configuration.*
-
-### Backend Services
+### Service Overview
 
 | Service | Port | Responsibility |
 |---|---:|---|
-| API Gateway | 8000 | Routes client requests to backend services |
-| Authentication | 8001 | User authentication and account management |
-| Chat | 8002 | Conversation and message management |
-| Agent | 8003 | AI workflows, coding, PDF RAG, search, and generation |
-| Billing | 8004 | Subscription plans, payments, and credits |
+| Frontend | 4173 | Production preview of the React application |
+| API Gateway | 8000 | Routes API requests |
+| Auth Service | 8001 | Authentication and user management |
+| Chat Service | 8002 | Conversation and message operations |
+| Agent Service | 8003 | AI workflows and assistant capabilities |
+| Billing Service | 8004 | Credits, plans, and billing operations |
 
-## How It Works
+The frontend development server normally uses port `5173`. The production preview uses port `4173`.
 
-1. **Authentication:** Users sign in through Google Authentication using Firebase.
-2. **Request Routing:** The frontend communicates with the backend through the API gateway.
-3. **Conversation Management:** The chat service handles conversations and messages.
-4. **AI Processing:** The agent service processes prompts and routes tasks to the relevant AI workflow.
-5. **Document Retrieval:** For PDF questions, document content is extracted, embedded, and retrieved to provide relevant context to the language model.
-6. **Data and Caching:** MongoDB stores application data, while Redis supports session and caching workflows.
-7. **Billing:** The billing service manages payment and credit-related operations.
-8. **Cloud Integration:** Supported file and infrastructure workflows can use configured AWS services.
+## 🌐 Live Demo
 
-## Project Structure
+**[Open KeshAI →](https://photography-buried-instrumental-animal.trycloudflare.com)**
 
-```text
-keshAI/
-├── backend/
-│   ├── gateway/
-│   │   ├── controllers/
-│   │   ├── middlewares/
-│   │   ├── utils/
-│   │   ├── Dockerfile
-│   │   └── index.js
-│   │
-│   ├── services/
-│   │   ├── auth/
-│   │   ├── chat/
-│   │   ├── agent/
-│   │   │   ├── agents/
-│   │   │   ├── graph/
-│   │   │   ├── routes/
-│   │   │   └── utils/
-│   │   └── billing/
-│   │
-│   ├── shared/
-│   │   └── redis/
-│   ├── docker-compose.yml
-│   ├── package.json
-│   └── package-lock.json
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── features/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   └── utils/
-│   ├── firebase.js
-│   ├── package.json
-│   └── vite.config.js
-│
-├── .gitignore
-└── README.md
-```
+### Important: Temporary Demo Availability
 
-## Getting Started
+This demo uses **Cloudflare Quick Tunnel** to make a locally running application accessible through a public HTTPS URL.
 
-Follow these steps to run KeshAI locally.
+- The application is not permanently hosted on a cloud server.
+- The developer's computer must remain powered on and connected to the internet.
+- The frontend preview, API gateway, required microservices, and supporting local services must be running.
+- The public URL may change after the tunnel is restarted.
+- If the demo is offline or the link no longer works, please contact the project owner.
+
+For a more reliable, always-available experience, the application would need a persistent deployment and a stable domain.
+
+## ⚙️ Run KeshAI Locally
 
 ### Prerequisites
 
-Install the following tools:
+Install or configure the following:
 
-- [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) and npm
 - [Git](https://git-scm.com/)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (for containerized services)
-- A MongoDB database, such as [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database)
-- A Redis instance
-- Required Firebase and AI provider credentials
+- MongoDB or MongoDB Atlas
+- Redis
+- Firebase project with Google Authentication enabled
+- Required AI provider API keys
+- Additional credentials for any optional integrations you want to use
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/keshviSolanki/KeshAI.git
 cd KeshAI
 ```
 
-### 2. Configure Environment Variables
+### 2. Install dependencies
 
-Create the required `.env` files for the frontend, API gateway, and individual backend services.
+Install the dependencies in the frontend, gateway, and each backend service directory.
 
-Typical locations include:
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+Repeat `npm install` in the following directories if they contain their own `package.json` files:
 
 ```text
-frontend/.env
-backend/gateway/.env
-backend/services/auth/.env
-backend/services/chat/.env
-backend/services/agent/.env
-backend/services/billing/.env
+backend/gateway
+backend/services/auth
+backend/services/chat
+backend/services/agent
+backend/services/billing
 ```
 
-Configure the variables expected by each service's code. Depending on the enabled features, these may include:
+### 3. Configure environment variables
+
+Create the required `.env` files based on the configuration expected by each service.
+
+Typical configuration categories include:
 
 - MongoDB connection strings
-- Redis connection URL
-- Firebase project configuration
-- Firebase Admin credentials or supported application credentials
-- JWT and session configuration
+- Redis connection settings
+- Firebase client configuration
+- Firebase Admin SDK credentials
 - AI provider API keys
-- Qdrant connection details
-- Tavily API key
-- AWS credentials or IAM role configuration
-- Cloud storage configuration
-- Razorpay key ID and secret
-- Frontend origin and gateway URL
+- Gateway and service URLs
+- AWS configuration, when required
+- Razorpay test or live credentials, when required
 
-For the frontend, configure the Vite variables expected by your code, such as:
+**Security:** Never commit `.env` files, Firebase service-account private keys, payment secrets, or other sensitive credentials to GitHub. Use environment variables and follow each integration's setup documentation.
 
-```env
-VITE_FIREBASE_API_KEY=your_firebase_web_api_key
-VITE_SERVER_URL=http://localhost:8000
-VITE_RAZORPAY_KEY=your_razorpay_key_id
-```
+### 4. Start the backend services
 
-Use the exact variable names expected by each service. The list above is a setup guide, not a substitute for checking each service's configuration.
+Start Redis and ensure your configured databases and external services are reachable.
 
-**Security:** Never commit `.env` files, Firebase service-account JSON files, private keys, or API secrets. Use environment variables or a secure secret manager for credentials.
+Run the API gateway and backend services from their respective directories using the start scripts defined in their `package.json` files.
 
-### 3. Install Dependencies
+Start these services:
 
-Install the frontend dependencies:
+1. Gateway — port `8000`
+2. Authentication — port `8001`
+3. Chat — port `8002`
+4. Agent — port `8003`
+5. Billing — port `8004`
 
-```bash
-cd frontend
-npm install
-```
+Keep the services running while using the application.
 
-Install the backend root dependencies:
-
-```bash
-cd ../backend
-npm install
-```
-
-Install dependencies for each service if they are not already installed through your project scripts:
-
-```bash
-cd services/auth
-npm install
-
-cd ../chat
-npm install
-
-cd ../agent
-npm install
-
-cd ../billing
-npm install
-```
-
-### 4. Start Redis
-
-If Redis is not already running, start it using Docker:
-
-```bash
-docker run -d --name redis -p 6379:6379 redis:latest
-```
-
-If you already have a Redis container, start that container instead of creating a duplicate.
-
-### 5. Start the Backend Services
-
-Open separate terminals from the project root and run each service using its configured start script.
-
-Example:
-
-```bash
-cd backend/gateway
-npm run dev
-```
-
-```bash
-cd backend/services/auth
-npm run dev
-```
-
-```bash
-cd backend/services/chat
-npm run dev
-```
-
-```bash
-cd backend/services/agent
-npm run dev
-```
-
-```bash
-cd backend/services/billing
-npm run dev
-```
-
-If a service does not define a `dev` script, use the script specified in its `package.json`.
-
-### 6. Start the Frontend
-
-Open another terminal:
+### 5. Start the frontend in development mode
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Open the local URL printed by Vite, usually:
+Open the local URL printed by Vite, normally:
 
 ```text
 http://localhost:5173
 ```
 
-**Note:** Local startup requires valid environment variables, reachable databases, and configured third-party integrations. Some AI or cloud features may remain unavailable until their provider credentials are configured.
+### 6. Build and preview the production frontend
 
-## Environment and Deployment
+To generate an optimized frontend build:
 
-KeshAI is organized for containerized backend deployment and cloud integration.
+```bash
+cd frontend
+npm run build
+npm run preview -- --host 0.0.0.0
+```
 
-The project includes Dockerfiles for backend services and a Docker Compose configuration. The application has also been developed with AWS deployment components such as container images, load balancing, and CloudFront delivery.
+Vite normally serves the preview on port `4173`.
 
-Deployment requires environment-specific configuration, secure secret management, service networking, health checks, CORS settings, and database connectivity. Refer to the deployment configuration before deploying to a new environment.
+Make sure the API configuration routes requests to the backend gateway correctly in both development and production. The production preview does not automatically inherit Vite's development proxy configuration.
 
-## Security Considerations
+## 🔒 Security Notes
 
-- Never expose API keys or service-account private keys in source control.
-- Keep `.env` files and Firebase service-account JSON files excluded through `.gitignore`.
-- Rotate any credentials that have been exposed.
-- Validate authentication and authorization at service boundaries.
-- Restrict production CORS origins to trusted frontend domains.
-- Use HTTPS for production traffic.
-- Verify payment transactions on the backend rather than trusting frontend responses.
-- Apply least-privilege permissions to cloud resources and service accounts.
+- Keep all private credentials outside version control.
+- Never expose Firebase Admin SDK private keys in public repositories.
+- Use test credentials when demonstrating payment functionality.
+- Restrict administrative and internal service endpoints appropriately.
+- Do not treat a temporary public tunnel as a production security boundary.
+- Rotate any credentials that may have been exposed.
+- Avoid sharing sensitive user information or production logs in public issues.
 
-## Future Improvements
+## 🚀 Future Improvements
 
-- Improve AI response quality and document retrieval.
-- Expand supported file formats and document workflows.
-- Add stronger monitoring, logging, and service health checks.
-- Improve automated testing and CI/CD pipelines.
-- Enhance scalability, rate limiting, and production observability.
-- Refine the user experience and subscription management.
+- Persistent cloud deployment and a stable custom domain.
+- Improved observability and centralized logging.
+- More robust error handling and service health monitoring.
+- Enhanced document processing and retrieval workflows.
+- Expanded AI integrations and user-facing capabilities.
+- Additional testing, performance optimization, and security hardening.
 
-## Learning Outcomes
-
-This project provides practical experience with:
-
-- Full-stack development using the MERN stack
-- Designing and organizing a microservices architecture
-- REST API development and service-to-service communication
-- Authentication and session management
-- AI agent workflows and retrieval-augmented generation
-- Vector databases, embeddings, and document retrieval
-- Docker-based development and deployment
-- Cloud infrastructure and object storage integration
-- Payment integration and credit-based billing
-- Environment configuration and application security
-
-## Author
+## 👩‍💻 Project Owner
 
 **Keshvi Solanki**
 
-- GitHub: [@keshviSolanki](https://github.com/keshviSolanki)
-- Project: [KeshAI](https://github.com/keshviSolanki/KeshAI)
+B.E. Information Technology | GTU
+
+- **GitHub:** [@keshviSolanki](https://github.com/keshviSolanki)
+- **Project Repository:** [KeshAI](https://github.com/keshviSolanki/KeshAI)
+
+For demo availability issues, questions, or suggestions, please contact the project owner through GitHub.
+
+## 📄 License
+
+No license has been specified yet. Unless a license is added to the repository, the project should not be assumed to be available for unrestricted reuse or redistribution.
 
 ---
 
 <p align="center">
-  Built with the MERN stack and modern AI technologies.
+  <strong>Built with ❤️ using the MERN stack and modern AI technologies.</strong>
+</p>
+
+<p align="center">
+  ⭐ If you find KeshAI interesting, consider starring the repository!
 </p>
