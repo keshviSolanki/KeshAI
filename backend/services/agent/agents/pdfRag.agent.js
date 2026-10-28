@@ -50,7 +50,7 @@
 //     const messages = [
 //       new SystemMessage(`
 
-// You are CortexAI PDF Assistant.
+// You are kesh.AI PDF Assistant.
 
 // Rules:
 
@@ -166,7 +166,7 @@ export const pdfRagAgent = async (state) => {
     // 7. Prepare instructions and user question
     const messages = [
       new SystemMessage(`
-You are CortexAI PDF Assistant and an expert document reviewer.
+You are kesh.AI PDF Assistant and an expert document reviewer.
 
 Answer the user's question using the provided PDF context.
 
