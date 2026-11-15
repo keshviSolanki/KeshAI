@@ -227,6 +227,10 @@ KeshAI follows a microservices architecture. The frontend communicates with a ce
 
 Screenshots of the application interface and its capabilities.
 
+### Login page
+
+![KeshAI AI Assistant](screenshots/login-page.png)
+
 ### Main Application
 
 ![KeshAI Home](screenshots/home.png)
@@ -238,10 +242,6 @@ Screenshots of the application interface and its capabilities.
 ### Document Analysis
 
 ![KeshAI Document Analysis](screenshots/document-analysis.png)
-
-### AI Assistant
-
-![KeshAI AI Assistant](screenshots/login-page.png)
 
 ### Payment System
 
