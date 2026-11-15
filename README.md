@@ -1,15 +1,15 @@
-# 🚀 KeshAI — AI-Powered Intelligent Assistant
+# 🚀 KeshAI — Agentic AI & Generative AI Assistant
 
 <p align="center">
-  <strong>Your AI-powered workspace for chatting, coding, researching, and creating.</strong>
+  <strong>An intelligent AI workspace for chatting, coding, researching, and creating.</strong>
 </p>
 
 <p align="center">
-  A full-stack AI assistant built with the MERN stack, microservices architecture, and modern AI technologies.
+  A full-stack AI application combining Generative AI, Agentic AI workflows, RAG, and a MERN microservices architecture.
 </p>
 
 <p align="center">
-  <a href="https://kiss-levels-outreach-although.trycloudflare.com"><strong>🌐 Try KeshAI Live Demo</strong></a>
+  <a href="YOUR_CURRENT_CLOUDFLARE_URL"><strong>🌐 Try KeshAI Demo</strong></a>
   &nbsp; • &nbsp;
   <a href="https://github.com/keshviSolanki/KeshAI"><strong>💻 GitHub Repository</strong></a>
 </p>
@@ -18,48 +18,128 @@
 
 ## 🌟 About KeshAI
 
-**KeshAI** is an AI-powered assistant designed to bring multiple AI capabilities into one platform. It combines a modern React frontend with a Node.js and Express backend organized into independent microservices.
+**KeshAI** is an AI-powered intelligent assistant that combines **Generative AI, Agentic AI, and Retrieval-Augmented Generation (RAG)** to provide multiple AI capabilities through a single platform.
 
-The platform aims to make AI-powered conversations, coding assistance, document analysis, web research, and content generation accessible through a single interface.
+Built using the MERN stack and a microservices architecture, KeshAI integrates Large Language Models (LLMs), AI workflows, vector databases, and external tools to support intelligent conversations, coding assistance, document analysis, web research, and AI-powered content generation.
 
-Built as a full-stack development project, KeshAI integrates authentication, AI workflows, file handling, vector search, and subscription billing into one application.
+The project explores how LLMs can go beyond simple text generation by incorporating contextual retrieval, tool integration, and multi-step AI workflows.
 
-> **Live Demo Notice:** The demo is shared through a temporary Cloudflare Quick Tunnel connected to the developer's local machine. It is not a permanently hosted production deployment. The link works only while the local computer, frontend preview server, required backend services, and Cloudflare tunnel are running. The URL may change when the tunnel restarts. If the demo is unavailable, please contact the project owner.
+KeshAI brings together modern AI engineering concepts and scalable backend development in one application.
+
+## 🧠 AI Concepts & Engineering
+
+KeshAI focuses on practical implementations of modern AI application development.
+
+### 1. Generative AI (GenAI)
+
+Generative AI enables the application to generate human-like responses and AI-powered content using Large Language Models.
+
+Concepts and capabilities:
+
+- Large Language Models (LLMs).
+- Prompt engineering and context management.
+- AI-powered conversational interfaces.
+- Text and code generation.
+- AI-assisted document and presentation generation.
+- Integration with external AI model providers.
+- Multimodal AI workflows where supported.
+
+### 2. Agentic AI
+
+Agentic AI focuses on building AI systems that can use tools and perform multiple steps to accomplish a task rather than only generating a single response.
+
+KeshAI explores agent-based AI application workflows using LangChain and LangGraph.
+
+Key concepts:
+
+- AI agents and agent workflows.
+- Tool calling and tool selection.
+- Multi-step task execution.
+- Context-aware AI interactions.
+- Workflow orchestration.
+- Integration with external tools and services.
+- Agent-based assistance for research and coding tasks.
+
+### 3. Retrieval-Augmented Generation (RAG)
+
+RAG combines information retrieval with LLM generation to provide responses grounded in relevant external documents.
+
+KeshAI integrates a document retrieval workflow using embeddings and Qdrant.
+
+Key concepts:
+
+- Document ingestion and processing.
+- Text chunking.
+- Embedding generation.
+- Vector database storage.
+- Semantic similarity search.
+- Context retrieval.
+- LLM-powered question answering using retrieved information.
+
+### 4. AI Tool Integration
+
+The application integrates external services to extend AI capabilities.
+
+Examples include:
+
+- AI model providers.
+- Web search integrations.
+- Vector search.
+- Document processing.
+- File storage.
+- AI-powered content generation.
+
+---
 
 ## ✨ Features
 
-### 🤖 AI-Powered Assistance
-- **AI Chat:** Interact with an AI assistant through a conversational interface.
-- **Coding Assistance:** Get help with programming questions and code-related tasks.
-- **PDF Analysis:** Upload and analyze PDF documents using Retrieval-Augmented Generation (RAG).
-- **Web Research:** Support for web-search-powered information gathering.
-- **Image Generation:** Generate images through supported AI integrations.
-- **Vision Capabilities:** Support for AI workflows involving image inputs.
-- **Content Creation:** AI-assisted document and presentation generation.
+### 🤖 Intelligent AI Assistant
+- Conversational AI interface.
+- LLM-powered responses.
+- Context-aware interactions.
+- Coding and programming assistance.
+- AI-powered content generation.
 
-### 🔐 Authentication and User Management
-- Google sign-in using Firebase Authentication.
-- Backend authentication and user verification.
-- User-specific conversations and application data.
-- Session management using Redis.
+### 🧠 Agentic AI Workflows
+- AI agent-based workflows.
+- Tool integration and calling.
+- Multi-step task execution.
+- LangChain and LangGraph integration.
+- AI-assisted research and problem-solving.
 
-### 📄 Document and File Workflows
-- File upload and processing workflows.
-- PDF question answering using RAG.
-- Vector search integration using Qdrant.
-- Support for generated documents and presentations.
+### 📚 RAG & Document Intelligence
+- PDF upload and processing.
+- Document-based question answering.
+- Embedding generation.
+- Qdrant vector search.
+- Context retrieval for AI responses.
 
-### 💳 Subscription and Credits
+### 🌐 AI Research & Multimodal Capabilities
+- Web research through supported search integrations.
+- Image input workflows.
+- AI image generation through supported providers.
+- Document and presentation generation.
+
+### 🔐 Authentication & User Management
+- Google authentication using Firebase.
+- Backend user verification.
+- User-specific conversations.
+- Redis-based session management.
+
+### 💳 Subscription & Credit Management
 - Credit-based AI usage.
-- Free and paid subscription plan support.
-- Razorpay integration for payment workflows.
+- Free and paid subscription plans.
+- Razorpay payment integration.
 
-### 🏗️ Scalable Backend Architecture
-- Independent backend microservices.
+### 🏗️ Backend Engineering
+- Microservices architecture.
 - Centralized API gateway.
-- MongoDB for application data.
-- Redis for session and caching workflows.
-- LangChain and LangGraph for AI application workflows.
+- Independent backend services.
+- MongoDB integration.
+- Redis session and caching workflows.
+- External API integrations.
+
+---
 
 ## 🛠️ Technology Stack
 
@@ -72,95 +152,160 @@ Built as a full-stack development project, KeshAI integrates authentication, AI 
 | Backend | Node.js, Express.js |
 | Architecture | Microservices |
 | Database | MongoDB, MongoDB Atlas |
-| Session and Caching | Redis |
+| Session & Caching | Redis, ioredis |
 | Authentication | Firebase Authentication, Firebase Admin SDK |
-| AI Integration | OpenRouter and supported AI models |
-| AI Workflows | LangChain, LangGraph |
-| Retrieval-Augmented Generation | Qdrant, embeddings, vector search |
+| Generative AI | Large Language Models, OpenRouter, supported AI models |
+| Agentic AI | LangChain, LangGraph, AI Agents |
+| RAG | Embeddings, Document Processing, Semantic Retrieval |
+| Vector Database | Qdrant |
 | Web Research | Tavily integration |
+| File Storage | AWS S3 |
 | Payments | Razorpay |
-| Cloud and Storage Integrations | AWS S3 and related AWS services |
-| Public Demo Access | Cloudflare Quick Tunnel |
+| Public Demo | Cloudflare Quick Tunnel |
 
-*The availability of individual integrations depends on their configuration, API credentials, and service status.*
+*Some integrations and capabilities depend on provider configuration, API credentials, and service availability.*
 
-## 🏛️ Architecture
+---
 
-KeshAI uses a microservices architecture in which the frontend communicates with a central API gateway, which routes requests to the appropriate backend services.
+## 🏛️ System Architecture
+
+KeshAI follows a microservices architecture. The frontend communicates with a centralized API gateway, which routes requests to the appropriate backend service.
 
 ```text
-                 ┌─────────────────────┐
-                 │      User / Browser │
-                 └──────────┬──────────┘
-                            │
-                 ┌──────────▼──────────┐
-                 │   React + Vite UI   │
-                 │    Port: 4173       │
-                 └──────────┬──────────┘
-                            │
-                 ┌──────────▼──────────┐
-                 │     API Gateway     │
-                 │     Port: 8000      │
-                 └──────────┬──────────┘
-                            │
-          ┌─────────────────┼─────────────────┐
-          │                 │                 │
-   ┌──────▼──────┐   ┌──────▼──────┐   ┌──────▼──────┐
-   │ Auth Service│   │ Chat Service│   │Agent Service│
-   │ Port: 8001  │   │ Port: 8002  │   │ Port: 8003  │
-   └─────────────┘   └─────────────┘   └─────────────┘
-                            │
-                     ┌──────▼──────┐
-                     │Billing Svc. │
-                     │ Port: 8004  │
-                     └─────────────┘
+                     ┌─────────────────────┐
+                     │    User / Browser   │
+                     └──────────┬──────────┘
+                                │
+                     ┌──────────▼──────────┐
+                     │   React + Vite UI   │
+                     │      Port 5173      │
+                     └──────────┬──────────┘
+                                │
+                     ┌──────────▼──────────┐
+                     │     API Gateway     │
+                     │      Port 8000      │
+                     └──────────┬──────────┘
+                                │
+              ┌─────────────────┼─────────────────┐
+              │                 │                 │
+       ┌──────▼──────┐   ┌──────▼──────┐   ┌──────▼──────┐
+       │ Auth Service│   │ Chat Service│   │Agent Service│
+       │ Port 8001   │   │ Port 8002   │   │ Port 8003   │
+       └─────────────┘   └─────────────┘   └─────────────┘
+                                │
+                         ┌──────▼──────┐
+                         │Billing Svc. │
+                         │ Port 8004   │
+                         └─────────────┘
 
-             Supporting Infrastructure
-       MongoDB • Redis • Qdrant • AI APIs
+                   AI & Supporting Infrastructure
+
+           ┌───────────┐  ┌───────────┐  ┌───────────┐
+           │  MongoDB  │  │   Redis   │  │  Qdrant   │
+           └───────────┘  └───────────┘  └───────────┘
+                                 │
+                     ┌───────────▼───────────┐
+                     │   AI Model Providers  │
+                     │  LLMs / AI Services   │
+                     └───────────────────────┘
 ```
 
-### Service Overview
+### Backend Service Overview
 
 | Service | Port | Responsibility |
 |---|---:|---|
-| Frontend | 4173 | Production preview of the React application |
-| API Gateway | 8000 | Routes API requests |
+| Frontend | 5173 | React application |
+| API Gateway | 8000 | Centralized API routing |
 | Auth Service | 8001 | Authentication and user management |
-| Chat Service | 8002 | Conversation and message operations |
-| Agent Service | 8003 | AI workflows and assistant capabilities |
-| Billing Service | 8004 | Credits, plans, and billing operations |
+| Chat Service | 8002 | Conversations and messages |
+| Agent Service | 8003 | AI agents, RAG, and AI workflows |
+| Billing Service | 8004 | Credits, plans, and billing |
 
-The frontend development server normally uses port `5173`. The production preview uses port `4173`.
+---
 
-## 🌐 Live Demo
+## 📸 Project Screenshots
 
-**[Open KeshAI →](https://photography-buried-instrumental-animal.trycloudflare.com)**
+Screenshots of the application interface and its capabilities.
 
-### Important: Temporary Demo Availability
+### Main Application
 
-This demo uses **Cloudflare Quick Tunnel** to make a locally running application accessible through a public HTTPS URL.
+![KeshAI Home](screenshots/home.png)
 
-- The application is not permanently hosted on a cloud server.
+### AI Chat Interface
+
+![KeshAI Chat](screenshots/chat.png)
+
+### Document Analysis
+
+![KeshAI Document Analysis](screenshots/document-analysis.png)
+
+### AI Assistant
+
+![KeshAI AI Assistant](screenshots/login-page.png)
+
+### Payment System
+
+![KeshAI AI Assistant](screenshots/payment-system.png)
+
+
+---
+
+## 🌐 Deployment Status
+
+### Cloudflare Quick Tunnel — Temporary Public Demo
+
+KeshAI is currently shared through a Cloudflare Quick Tunnel that exposes the locally running application through a public HTTPS URL.
+
+This provides a way to demonstrate the application without a completed permanent cloud deployment.
+
+**How the demo works:**
+
+1. The frontend runs locally using Vite.
+2. The backend gateway and required microservices run locally.
+3. Supporting services and external integrations provide the required backend functionality.
+4. Cloudflare Tunnel exposes the frontend through a temporary public HTTPS URL.
+
+**Limitations:**
+
 - The developer's computer must remain powered on and connected to the internet.
-- The frontend preview, API gateway, required microservices, and supporting local services must be running.
-- The public URL may change after the tunnel is restarted.
-- If the demo is offline or the link no longer works, please contact the project owner.
+- The frontend, gateway, backend services, and required infrastructure must remain running.
+- The temporary public URL may change when the tunnel restarts.
+- The demo may become unavailable when the local application or tunnel stops.
 
-For a more reliable, always-available experience, the application would need a persistent deployment and a stable domain.
+### Render Deployment — In Progress
+
+I have explored deploying the KeshAI microservices architecture using Render.
+
+However, the complete application has not yet been successfully deployed as a persistent production environment.
+
+The deployment requires additional configuration for:
+
+- Multiple backend microservices.
+- API gateway and service-to-service communication.
+- Hosted Redis infrastructure.
+- Database and Qdrant connectivity.
+- Environment variables and authentication configuration.
+- External AI and payment integrations.
+
+The current Cloudflare demo is therefore used for project demonstration while permanent deployment is being worked on.
+
+> **Deployment note:** Cloudflare Quick Tunnel is a temporary development/demo solution, not a permanent production hosting environment.
+
+---
 
 ## ⚙️ Run KeshAI Locally
 
 ### Prerequisites
 
-Install or configure the following:
-
-- [Node.js](https://nodejs.org/) and npm
+- [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
-- MongoDB or MongoDB Atlas
-- Redis
-- Firebase project with Google Authentication enabled
-- Required AI provider API keys
-- Additional credentials for any optional integrations you want to use
+- MongoDB or MongoDB Atlas.
+- Redis.
+- Docker (recommended for local infrastructure).
+- Firebase project with Google Authentication enabled.
+- Qdrant Cloud account or local Qdrant instance.
+- Required AI provider API keys.
+- Optional AWS and Razorpay credentials.
 
 ### 1. Clone the repository
 
@@ -171,7 +316,7 @@ cd KeshAI
 
 ### 2. Install dependencies
 
-Install the dependencies in the frontend, gateway, and each backend service directory.
+Install frontend dependencies:
 
 ```bash
 cd frontend
@@ -179,7 +324,7 @@ npm install
 cd ..
 ```
 
-Repeat `npm install` in the following directories if they contain their own `package.json` files:
+Install dependencies in the gateway and each backend service directory containing a `package.json`:
 
 ```text
 backend/gateway
@@ -189,84 +334,119 @@ backend/services/agent
 backend/services/billing
 ```
 
+Run `npm install` inside each directory.
+
 ### 3. Configure environment variables
 
-Create the required `.env` files based on the configuration expected by each service.
+Create the required `.env` files for the frontend, gateway, and backend services.
 
-Typical configuration categories include:
+Typical environment configuration includes:
 
-- MongoDB connection strings
-- Redis connection settings
-- Firebase client configuration
-- Firebase Admin SDK credentials
-- AI provider API keys
-- Gateway and service URLs
-- AWS configuration, when required
-- Razorpay test or live credentials, when required
+- MongoDB connection strings.
+- Redis connection URL.
+- Qdrant URL and API key.
+- Firebase client configuration.
+- Firebase Admin SDK credentials.
+- AI provider API keys.
+- Gateway and service URLs.
+- AWS credentials.
+- Razorpay credentials.
 
-**Security:** Never commit `.env` files, Firebase service-account private keys, payment secrets, or other sensitive credentials to GitHub. Use environment variables and follow each integration's setup documentation.
+Example frontend configuration:
 
-### 4. Start the backend services
+```env
+VITE_SERVER_URL=http://localhost:8000
+```
 
-Start Redis and ensure your configured databases and external services are reachable.
+Example agent service configuration:
 
-Run the API gateway and backend services from their respective directories using the start scripts defined in their `package.json` files.
+```env
+QDRANT_URL=your_qdrant_cluster_url
+QDRANT_API_KEY=your_qdrant_api_key
+REDIS_URL=your_redis_connection_url
+```
 
-Start these services:
+Use the actual environment variables required by each service.
 
-1. Gateway — port `8000`
-2. Authentication — port `8001`
-3. Chat — port `8002`
-4. Agent — port `8003`
-5. Billing — port `8004`
+**Important:** Never commit `.env` files, Firebase service-account private keys, API keys, or payment secrets to GitHub.
 
-Keep the services running while using the application.
+### 4. Start supporting infrastructure
 
-### 5. Start the frontend in development mode
+Start Redis and ensure MongoDB and Qdrant are accessible.
+
+Example Redis Docker command:
+
+```bash
+docker run -d --name redis -p 6379:6379 redis:latest
+```
+
+Configure each service with the appropriate local or cloud connection URL.
+
+### 5. Start backend services
+
+Start each backend service from its respective directory using the scripts defined in its `package.json`.
+
+| Service | Port |
+|---|---:|
+| API Gateway | 8000 |
+| Auth | 8001 |
+| Chat | 8002 |
+| Agent | 8003 |
+| Billing | 8004 |
+
+Keep the required services running.
+
+### 6. Start the frontend
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Open the local URL printed by Vite, normally:
+Open:
 
 ```text
 http://localhost:5173
 ```
 
-### 6. Build and preview the production frontend
-
-To generate an optimized frontend build:
+### 7. Build the frontend
 
 ```bash
-cd frontend
 npm run build
 npm run preview -- --host 0.0.0.0
 ```
 
-Vite normally serves the preview on port `4173`.
+Vite's default preview port is `4173`.
 
-Make sure the API configuration routes requests to the backend gateway correctly in both development and production. The production preview does not automatically inherit Vite's development proxy configuration.
+Ensure that the frontend API configuration points to the correct backend gateway.
+
+---
 
 ## 🔒 Security Notes
 
 - Keep all private credentials outside version control.
-- Never expose Firebase Admin SDK private keys in public repositories.
+- Never expose Firebase Admin SDK private keys.
+- Use environment variables for sensitive configuration.
 - Use test credentials when demonstrating payment functionality.
-- Restrict administrative and internal service endpoints appropriately.
-- Do not treat a temporary public tunnel as a production security boundary.
+- Protect internal microservice endpoints.
+- Do not use a temporary public tunnel as a production security boundary.
 - Rotate any credentials that may have been exposed.
-- Avoid sharing sensitive user information or production logs in public issues.
+
+---
 
 ## 🚀 Future Improvements
 
-- Persistent cloud deployment and a stable custom domain.
-- Improved observability and centralized logging.
-- More robust error handling and service health monitoring.
-- Enhanced document processing and retrieval workflows.
-- Expanded AI integrations and user-facing capabilities.
-- Additional testing, performance optimization, and security hardening.
+- Complete persistent cloud deployment.
+- Production-ready Redis and infrastructure configuration.
+- Stable custom domain and hosting.
+- Advanced AI agent workflows.
+- Improved tool orchestration and multi-step execution.
+- Enhanced RAG and document retrieval.
+- Centralized logging and service monitoring.
+- Better error handling and security hardening.
+- Performance optimization and testing.
+
+---
 
 ## 👩‍💻 Project Owner
 
@@ -277,16 +457,18 @@ B.E. Information Technology | GTU
 - **GitHub:** [@keshviSolanki](https://github.com/keshviSolanki)
 - **Project Repository:** [KeshAI](https://github.com/keshviSolanki/KeshAI)
 
-For demo availability issues, questions, or suggestions, please contact the project owner through GitHub.
+For questions, suggestions, or demo availability issues, feel free to connect through GitHub.
+
+---
 
 ## 📄 License
 
-No license has been specified yet. Unless a license is added to the repository, the project should not be assumed to be available for unrestricted reuse or redistribution.
+No license has been specified yet. Unless a license is added to this repository, the project should not be assumed to be available for unrestricted reuse or redistribution.
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ using the MERN stack and modern AI technologies.</strong>
+  <strong>Built with ❤️ using MERN, Agentic AI, and Generative AI.</strong>
 </p>
 
 <p align="center">
